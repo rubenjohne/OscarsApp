@@ -1,6 +1,7 @@
 Oscarsapp::Application.routes.draw do
   resources :participants
 
+  get '/mobile' => 'pages#mobile'
 
   get "pages/home"
   # The priority is based upon order of creation: first created -> highest priority.
