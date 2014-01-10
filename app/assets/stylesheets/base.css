@@ -275,10 +275,11 @@ img{
 .fit{
 	position:absolute;
 	margin:0;
-    width:200px;
+    width:150px;
     height:40px;
     top:400px;
     left:65px;
+    line-height: 150%;
 }
 
 .herotext{
