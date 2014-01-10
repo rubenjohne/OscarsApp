@@ -313,8 +313,8 @@ img{
   	z-index:100;
     position:absolute;    
     font-size: 12px;
-    left:0px;
-    top:40px;
+    left:40px;
+    top:600px;
     text-indent: -9999em;
     width: 130px;
   	height: 29px;
