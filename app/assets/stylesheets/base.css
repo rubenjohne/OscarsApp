@@ -268,15 +268,15 @@
 
 	.herotext span {
     position: absolute;
-    bottom: 20px;
+    left:107px;
+    bottom: 500px;
     font-family: 'museo_slab500';
     font-size: 150%;
     color: #fff;
     padding: 0 20px;
     width: 40%;
     line-height: 150%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
+
 }
 
 
