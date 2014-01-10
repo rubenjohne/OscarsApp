@@ -317,6 +317,23 @@ img{
     text-indent: -9999em;
     width: 130px;
   	height: 29px;
-    background: url("../assets/buttons/0168_ShopButton-idle.jpg") no-repeat; border: none;
+    background: url("../mobile/LOSE-TRY-AGAIN_03.jpg") no-repeat; border: none;
+}
+
+#shopnowimage:hover{
+
+  	z-index:100;
+    position:absolute;    
+    font-size: 12px;
+    left:335px;
+    top:340px;
+    text-indent: -9999em;
+    width: 130px;
+  	height: 29px;
+    background: url("../mobile/LOSE-TRY-AGAIN-HOVER_03.jpg") no-repeat; border: none;
+}
+
+.white{
+	color: #fff;
 }
 
