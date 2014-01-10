@@ -274,7 +274,7 @@ img{
 
 .herotext{
 	position:absolute;
-	top:200px;
+	top:100px;
 	left:65px;
 	font-size: 80%;
     color: #fff;
@@ -285,7 +285,7 @@ img{
 
 .herotext2{
 	position:absolute;
-	top:450px;
+	top:250px;
 	left:65px;
 	font-size: 80%;
     color: #fff;
