@@ -275,6 +275,7 @@ img{
 .fit{
 	position:absolute;
 	margin:0;
+	margin-bottom:0px;
     width:150px;
     height:20px;
     top:400px;
