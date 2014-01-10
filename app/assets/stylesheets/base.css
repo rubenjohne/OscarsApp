@@ -276,10 +276,11 @@ img{
 	position:absolute;
 	margin:0;
     width:150px;
-    height:40px;
+    height:20px;
     top:400px;
     left:65px;
-    line-height: 150%;
+    line-height: 50%;
+    font-size: 50%;
 }
 
 .herotext{
