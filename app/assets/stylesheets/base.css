@@ -266,4 +266,17 @@
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
 
+	.herotext span {
+    position: absolute;
+    bottom: 20px;
+    font-family: 'museo_slab500';
+    font-size: 150%;
+    color: #fff;
+    padding: 0 20px;
+    width: 40%;
+    line-height: 150%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+}
+
 
