@@ -275,12 +275,12 @@ img{
 .herotext{
 	position:absolute;
 	top:200px;
-	left:20px;
-	font-size: 150%;
+	left:30px;
+	font-size: 50%;
     color: #fff;
-    padding: 0 20px;
+    padding: 0 0px;
     width: 40%;
-    line-height: 150%;
+    line-height: 70%;
 }
 
 
