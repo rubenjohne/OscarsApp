@@ -210,7 +210,7 @@
 ================================================== */
 
 	form {
-		margin-bottom: 20px; }
+		margin-bottom: 0px; }
 	fieldset {
 		margin-bottom: 20px; }
 	input[type="text"],
@@ -313,8 +313,8 @@ img{
   	z-index:100;
     position:absolute;    
     font-size: 12px;
-    left:40px;
-    top:600px;
+    left:60px;
+    top:500px;
     text-indent: -9999em;
     width: 130px;
   	height: 29px;
