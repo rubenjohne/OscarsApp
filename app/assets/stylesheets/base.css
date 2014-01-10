@@ -312,8 +312,8 @@ img{
   	z-index:100;
     position:absolute;    
     font-size: 12px;
-    left:335px;
-    top:340px;
+    left:0px;
+    top:40px;
     text-indent: -9999em;
     width: 130px;
   	height: 29px;
@@ -325,8 +325,8 @@ img{
   	z-index:100;
     position:absolute;    
     font-size: 12px;
-    left:335px;
-    top:340px;
+    left:0px;
+    top:40px;
     text-indent: -9999em;
     width: 130px;
   	height: 29px;
