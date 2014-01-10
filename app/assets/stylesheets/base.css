@@ -282,7 +282,7 @@ img{
     left:65px;
     color: #fff;
     line-height: 40%;
-    font-size: 30%;
+    font-size: 20%;
     padding:0px 0px 0px 0px;
 }
 
@@ -326,8 +326,8 @@ img{
   	z-index:100;
     position:absolute;    
     font-size: 12px;
-    left:0px;
-    top:40px;
+    left:100px;
+    top:500px;
     text-indent: -9999em;
     width: 130px;
   	height: 29px;
