@@ -272,6 +272,13 @@ img{
     height: auto;
 }
 
+.fit{
+	position:absolute;
+	margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
 .herotext{
 	position:absolute;
 	top:150px;
