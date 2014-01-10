@@ -274,8 +274,9 @@ img{
 
 .fit{
 	position:absolute;
-	margin-bottom: 15px;
-    width:300px;
+	margin:0;
+    width:200px;
+    height:40px;
     top:400px;
     left:65px;
 }
