@@ -275,7 +275,18 @@ img{
 .herotext{
 	position:absolute;
 	top:200px;
-	left:70px;
+	left:65px;
+	font-size: 80%;
+    color: #fff;
+    padding: 0 0px;
+    width: 60%;
+    line-height: 150%;
+}
+
+.herotext2{
+	position:absolute;
+	top:250px;
+	left:65px;
 	font-size: 80%;
     color: #fff;
     padding: 0 0px;
