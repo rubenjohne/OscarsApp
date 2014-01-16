@@ -1,4 +1,6 @@
 Oscarsapp::Application.routes.draw do
+  resources :users
+
   resources :participants
 
   get '/mobile' => 'pages#mobile'
