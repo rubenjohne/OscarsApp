@@ -1,4 +1,6 @@
 Oscarsapp::Application.routes.draw do
+  resources :days
+
   resources :users
 
   resources :participants
