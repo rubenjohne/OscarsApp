@@ -11,14 +11,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140128000058) do
+ActiveRecord::Schema.define(version: 20140129020334) do
 
-  create_table "participants", force: true do |t|
-    t.string   "name"
-    t.string   "email"
+  create_table "answers", force: true do |t|
+    t.datetime "date"
+    t.string   "ipaddress"
+    t.integer  "choice_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "answers", ["choice_id"], name: "index_answers_on_choice_id"
+
+  create_table "choices", force: true do |t|
+    t.string   "choice"
+    t.boolean  "correct"
+    t.string   "explaination"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "choices", ["question_id"], name: "index_choices_on_question_id"
+
+  create_table "days", force: true do |t|
+    t.string   "dayname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "participants", force: true do |t|
+    t.string   "email"
+    t.boolean  "subscribed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "prizes", force: true do |t|
+    t.string   "pictureurl"
+    t.string   "promocode"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questions", force: true do |t|
+    t.string   "question"
+    t.integer  "day_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["day_id"], name: "index_questions_on_day_id"
 
   create_table "users", force: true do |t|
     t.string   "name"

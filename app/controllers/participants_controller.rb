@@ -1,7 +1,4 @@
 class ParticipantsController < ApplicationController
-	def index
-	end
-
-	def mobile
-	end
+  active_scaffold :"participant" do |conf|
+  end
 end

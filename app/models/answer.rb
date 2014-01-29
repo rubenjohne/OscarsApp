@@ -1,15 +1,16 @@
 # == Schema Information
 #
-# Table name: participants
+# Table name: answers
 #
 #  id         :integer          not null, primary key
-#  email      :string(255)
-#  subscribed :boolean
+#  date       :datetime
+#  ipaddress  :string(255)
+#  choice_id  :integer
 #  created_at :datetime
 #  updated_at :datetime
 #
 
-class Participant < ActiveRecord::Base
+class Answer < ActiveRecord::Base
 	def to_label
 		"#{id}"
 	end

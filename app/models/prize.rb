@@ -1,15 +1,15 @@
 # == Schema Information
 #
-# Table name: participants
+# Table name: prizes
 #
 #  id         :integer          not null, primary key
-#  email      :string(255)
-#  subscribed :boolean
+#  pictureurl :string(255)
+#  promocode  :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #
 
-class Participant < ActiveRecord::Base
+class Prize < ActiveRecord::Base
 	def to_label
 		"#{id}"
 	end

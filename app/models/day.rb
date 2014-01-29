@@ -1,16 +1,16 @@
 # == Schema Information
 #
-# Table name: participants
+# Table name: days
 #
 #  id         :integer          not null, primary key
-#  email      :string(255)
-#  subscribed :boolean
+#  dayname    :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #
 
-class Participant < ActiveRecord::Base
+class Day < ActiveRecord::Base
+	has_many :questions
 	def to_label
-		"#{id}"
+		"#{dayname}"
 	end
 end
