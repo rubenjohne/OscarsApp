@@ -1,3 +1,3 @@
 class Day < ActiveRecord::Base
-	attr_accessible :DayName
+	has_many :questions
 end

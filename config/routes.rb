@@ -1,4 +1,12 @@
 Oscarsapp::Application.routes.draw do
+  resources :prizes do as_routes end
+  resources :participants do as_routes end
+  resources :choices do as_routes end
+  resources :answers do as_routes end
+  resources :questions do as_routes end
+  resources :days do as_routes end
+  resources :questions
+
   resources :days
 
   resources :users

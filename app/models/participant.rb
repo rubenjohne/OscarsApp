@@ -1,13 +1,3 @@
-# == Schema Information
-#
-# Table name: participants
-#
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  email      :string(255)
-#  created_at :datetime
-#  updated_at :datetime
-#
-
 class Participant < ActiveRecord::Base
+	has_many :answers
 end
