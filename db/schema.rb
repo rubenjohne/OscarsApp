@@ -11,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140129020334) do
 
   create_table "answers", force: true do |t|
@@ -40,9 +39,6 @@ ActiveRecord::Schema.define(version: 20140129020334) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-=======
-ActiveRecord::Schema.define(version: 20140128000058) do
-
 
   create_table "participants", force: true do |t|
     t.string   "email"
