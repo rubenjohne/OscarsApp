@@ -2,12 +2,13 @@
 #
 # Table name: answers
 #
-#  id         :integer          not null, primary key
-#  date       :datetime
-#  ipaddress  :string(255)
-#  choice_id  :integer
-#  created_at :datetime
-#  updated_at :datetime
+#  id             :integer          not null, primary key
+#  date           :datetime
+#  ipaddress      :string(255)
+#  choice_id      :integer
+#  created_at     :datetime
+#  updated_at     :datetime
+#  participant_id :integer
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

@@ -10,7 +10,10 @@
 #
 
 class Participant < ActiveRecord::Base
+  attr_accessible :email, :subscribed
+  
 	def to_label
 		"#{id}"
 	end
+	
 end

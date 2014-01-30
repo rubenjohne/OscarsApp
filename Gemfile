@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'annotate'
 
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -39,6 +40,7 @@ end
 
 group :test do
 	gem 'sqlite3'
+	gem 'faker'
 end
 
 group :development do
