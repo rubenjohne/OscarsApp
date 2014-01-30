@@ -8,12 +8,12 @@ class PagesController < ApplicationController
   
   def contest
     # participant information here
-    @participant = Participant.find(1)
+    # @participant = Participant.find(1)
     
     # start the counter for the beginning of a new session
     
-    
-    @day = Day.find(1)
+    # current day needs to be fixed too 
+    #@day = Day.find(1)
     @question = @day.questions.find(1)
     @choices = @question.choices    
   end
