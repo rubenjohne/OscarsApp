@@ -12,8 +12,7 @@ class PagesController < ApplicationController
     
     # start the counter for the beginning of a new session
     
-    # current day needs to be fixed too 
-    #@day = Day.find(1)
+    @day = Day.find(1)
     @question = @day.questions.find(1)
     @choices = @question.choices    
   end
