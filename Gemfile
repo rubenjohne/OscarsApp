@@ -41,10 +41,12 @@ end
 group :test do
 	gem 'sqlite3'
 	gem 'faker'
+	gem 'rspec-rails'
 end
 
 group :development do
 	gem 'sqlite3'
+	gem 'rspec-rails'	
 end
 
 # Use ActiveModel has_secure_password

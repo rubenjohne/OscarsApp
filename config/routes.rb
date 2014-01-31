@@ -33,6 +33,8 @@ Oscarsapp::Application.routes.draw do
 
   match 'pages/answer', via: :post 
 
+  match '/signup', :to => 'pages#signup', via: :post 
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
