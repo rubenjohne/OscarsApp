@@ -15,6 +15,8 @@ Oscarsapp::Application.routes.draw do
 
   get '/mobile' => 'pages#mobile'
 
+  get '/1/' => 'pages#1'
+
   get "pages/home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
