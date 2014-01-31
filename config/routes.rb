@@ -17,6 +17,15 @@ Oscarsapp::Application.routes.draw do
 
 
   get '/1/' => 'pages#1'
+  get '/2/' => 'pages#2'
+  get '/3/' => 'pages#3'
+  get '/4/' => 'pages#4'
+  get '/5/' => 'pages#5'
+  get '/6/' => 'pages#6'
+  get '/7/' => 'pages#7'
+  get '/8/' => 'pages#8'
+  get '/9/' => 'pages#9'
+  get '/10/' => 'pages#10'
 
   get 'pages/home'
 
