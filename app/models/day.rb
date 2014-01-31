@@ -10,6 +10,7 @@
 
 class Day < ActiveRecord::Base
 	has_many :questions
+	attr_accessible :dayname
 	def to_label
 		"#{dayname}"
 	end

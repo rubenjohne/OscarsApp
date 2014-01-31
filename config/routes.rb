@@ -15,9 +15,16 @@ Oscarsapp::Application.routes.draw do
 
   get '/mobile' => 'pages#mobile'
 
+
   get '/1/' => 'pages#1'
 
-  get "pages/home"
+  get 'pages/home'
+
+  match '/contest', :to => 'pages#contest', via: :get 
+
+  match 'pages/answer', via: :post 
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
