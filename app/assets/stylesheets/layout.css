@@ -20,6 +20,50 @@
 /* #Page Styles
 ================================================== */
 
+.container 
+{ position: relative; width: 100%; margin: 0 0; padding: 0; height:100%;}
+
+img{
+	margin-bottom: -4px;
+}
+
+body{
+	margin:0px;
+}
+
+.derp1{
+	position:absolute;
+	left:0px;
+}
+
+.derp2{
+	position:absolute;
+	left:45.72%;
+}
+
+.derp3{
+	position: absolute;
+	left:54.07%;
+}
+
+.center{
+	width: 100%;
+    height: 36px;
+    position: relative;
+}
+
+.fit{
+	position:absolute;
+	margin:0;
+	margin-bottom:0px;
+    width:850px;
+    height:550px;
+    top:650px;
+    left:550px;
+    color: #fff;
+    padding:0px 0px 0px 0px;
+}
+
 /* #Media Queries
 ================================================== */
 
