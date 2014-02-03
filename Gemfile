@@ -42,11 +42,23 @@ group :test do
 	gem 'sqlite3'
 	gem 'faker'
 	gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'capybara'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork'
 end
 
 group :development do
 	gem 'sqlite3'
-	gem 'rspec-rails'	
+	gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'capybara'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork'
 end
 
 # Use ActiveModel has_secure_password

@@ -25,5 +25,16 @@ describe PagesController do
     it "should redirect back to home if the user didn't agree to terms"
     it "should not create the Participant if it already exist"
   end
+  
+  describe "POST 'answer'" do
+    
+    it "should save the answer"
+    
+    it "GET should not be successful" do
+      get 'answer'
+      response.should_not be_success
+    end
+    
+  end
 
 end
