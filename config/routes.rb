@@ -1,4 +1,5 @@
 Oscarsapp::Application.routes.draw do
+
   resources :prizes do as_routes end
   resources :participants do as_routes end
   resources :choices do as_routes end
@@ -33,7 +34,7 @@ Oscarsapp::Application.routes.draw do
 
   match 'pages/answer', via: :post 
 
-  match '/signup', :to => 'pages#signup', via: :post 
+  match '/signup', :to => 'users#new', via: :get 
 
 
   # The priority is based upon order of creation: first created -> highest priority.
