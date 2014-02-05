@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'spork'
+require 'capybara/rspec'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
@@ -75,6 +76,15 @@ Spork.prefork do
     # the seed, which is printed after each run.
     #     --seed 1234
     config.order = "random"
+    
+    # configure to include factory girl gem 
+    config.include FactoryGirl::Syntax::Methods
+    
+    # configure the rspec to make sure that the paths are recognized 
+    config.include Rails.application.routes.url_helpers
+    
+    # configuration to add the visit undefined method back again 
+    config.include Capybara::DSL
   end
 
 

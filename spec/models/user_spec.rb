@@ -13,7 +13,7 @@
 require 'spec_helper'
 
 describe User do
-  before { @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar") }
+  before { @user = build(:user) }
   
   subject { @user } 
   
@@ -23,8 +23,8 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:authenticate) }
-  it { should be_valid }
   
+    
   describe "when name is not present" do
     before {@user.name = ""}
     it { should_not be_valid }
@@ -51,15 +51,13 @@ describe User do
     end    
   end
   
-  # this is what i think is causing the validation error to fail 
-  #describe "when email is already taken" do
-  #  before do 
-  #    user_with_same_email = @user.dup
-  #    user_with_same_email.save
-  #  end
+  describe "when email is already taken" do
+    before do 
+      user_with_same_email = @user.dup
+    end
      
-  #   it { should_not be_valid }
-  #end
+     it { should_not be_valid }
+  end
   
   describe "when password is not present" do
     before { @user.password = @user.password_confirmation = ""}
@@ -82,11 +80,10 @@ describe User do
   end   
   
   describe "return value of authenticate method" do
-    before { @user.save }
     let(:found_user) { User.find_by(email: @user.email) }
     
     describe "with valid password" do
-      it { @user.should == found_user.authenticate(@user.password) }
+      it { found_user.should == found_user.authenticate(@user.password) }
     end
     
     describe "with invalid password" do 

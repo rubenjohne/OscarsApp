@@ -48,6 +48,7 @@ group :test do
   gem 'growl'
   gem 'spork-rails', github: 'railstutorial/spork-rails'
   gem 'guard-spork'
+  gem 'factory_girl_rails'
 end
 
 group :development do

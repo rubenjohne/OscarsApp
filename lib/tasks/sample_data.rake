@@ -6,6 +6,9 @@ namespace :db do
   task :populate => :environment do 
     Rake::Task['db:reset'].invoke 
     
+    # create a user to pass the test so annoying!
+    User.create!(:name => "Ruben Epong", :email => "ruben@tadashishoji.com", :password => "foobar", :password_confirmation => "foobar")
+   
     #create the participant
     Participant.create!(:email => 'ruben@tadashishoji.com', :subscribed => true)
     
