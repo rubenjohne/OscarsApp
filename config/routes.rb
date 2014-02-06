@@ -13,6 +13,8 @@ Oscarsapp::Application.routes.draw do
   resources :users
 
   resources :participants
+  
+  resources :sessions, only: [:new, :create, :destroy]
 
   get '/mobile' => 'pages#mobile'
 
@@ -35,6 +37,8 @@ Oscarsapp::Application.routes.draw do
   match 'pages/answer', via: :post 
 
   match '/signup', :to => 'users#new', via: :get 
+  match '/signin', :to => 'sessions#new', via: :get
+  match '/signout', :to => 'sessions#destroy', via: :delete
 
 
   # The priority is based upon order of creation: first created -> highest priority.

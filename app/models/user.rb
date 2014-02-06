@@ -12,6 +12,7 @@
 
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
+  before_save :create_remember_token 
   has_secure_password 
   
   validates :name, presence: true, length: { maximum: 50}
@@ -23,4 +24,11 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true 
   # to make sure the email address is downcased before it gets saved to the database
   before_save { |user| user.email = email.downcase }
+
+private
+
+  def create_remember_token 
+    self.remember_token = SecureRandom.urlsafe_base64
+  end
+
 end
