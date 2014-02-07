@@ -49,6 +49,8 @@ group :test do
   gem 'spork-rails', github: 'railstutorial/spork-rails'
   gem 'guard-spork'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false 
+  gem 'database_cleaner'
 end
 
 group :development do
