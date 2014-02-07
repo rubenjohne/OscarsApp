@@ -85,6 +85,9 @@ Spork.prefork do
     
     # configuration to add the visit undefined method back again 
     config.include Capybara::DSL
+    
+    # configure to declare an exclusion filter
+    config.filter_run_excluding :broken => true
   end
 
 
