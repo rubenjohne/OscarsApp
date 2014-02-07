@@ -1,4 +1,10 @@
 class PagesController < ApplicationController
+
+  def one
+    @day = Day.find(2)
+    @question = @day.questions.find(3)
+    @choices = @question.choices 
+  end
   
   def home    
   end

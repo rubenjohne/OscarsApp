@@ -16,7 +16,7 @@ Oscarsapp::Application.routes.draw do
   get '/mobile' => 'pages#mobile'
 
 
-  get '/1/' => 'pages#1'
+  get '/one/' => 'pages#one'
   get '/2/' => 'pages#2'
   get '/3/' => 'pages#3'
   get '/4/' => 'pages#4'
@@ -26,6 +26,12 @@ Oscarsapp::Application.routes.draw do
   get '/8/' => 'pages#8'
   get '/9/' => 'pages#9'
   get '/10/' => 'pages#10'
+
+  get '/congrats/' => 'pages#congrats'
+
+  get '/theend/' => 'pages#promotionend'
+
+  get '/incorrect' => 'pages#incorrect'
 
   get 'pages/home'
 

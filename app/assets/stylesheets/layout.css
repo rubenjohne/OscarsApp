@@ -25,6 +25,7 @@
 
 img{
 	margin-bottom: -4px;
+	margin-left: -5px;
 }
 
 body{
@@ -63,6 +64,101 @@ body{
     color: #fff;
     padding:0px 0px 0px 0px;
 }
+
+.form{
+	position:relative;
+}
+
+.questionscontainer{
+	position:absolute;
+	top:750px;
+	left:375px;
+	z-index:5;
+}
+
+.questions p{
+	color:white;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-style:italic;
+	font-size:24px;
+}
+
+.choices{
+	width: 50%;
+    margin: 0 auto;
+}
+
+.choices p{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color:gold;
+   font-size:18px;
+   text-align: justify;
+   display:inline-block;
+
+}
+
+.cluster{
+	position:absolute;
+}
+
+.topslice{
+	width:1280px;
+	text-align:center;
+	height:716px;
+	background:url("/images/incorrect/LOSE-TRY-AGAIN_01.jpg") no-repeat top;
+}
+.midleft{
+
+	text-align:left;
+	height:39px;
+	width:100%;
+	margin-left:0;
+	background:url("/images/incorrect/LOSE-TRY-AGAIN_02.jpg") no-repeat left;
+}
+
+.mid{
+
+	text-align:center;
+	height:39px;
+	margin-left:-4px;
+	background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat left;
+	background-position:center;
+}
+
+.midright{
+
+	text-align:center;
+	height:39px;
+	margin-right:0;
+	background:url("/images/incorrect/LOSE-TRY-AGAIN_04.jpg") no-repeat left;
+	background-position:right;
+}
+
+.bottomslice{
+
+	text-align:center;
+	height:269px;
+	margin-right:0;
+	background:url("/images/incorrect/LOSE-TRY-AGAIN_05.jpg") no-repeat bottom;
+	background-position:center;
+}
+
+.promoend6{
+	position:absolute;
+	margin-left:1px;
+}
+
+.gplus{
+	margin-left:1px;
+}
+
+.form_submit{
+	position:absolute;
+	top:150px;
+	left:0;
+}
+
 
 /* #Media Queries
 ================================================== */
