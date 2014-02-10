@@ -8,7 +8,9 @@ describe PagesController do
       get 'home'
       response.should be_success
     end
-
+    
+    it "should redirect to contest if the user is already in the session" 
+      
   end
 
   describe "GET 'contest'"  do
@@ -20,8 +22,16 @@ describe PagesController do
 
   end
 
-  describe "POST 'signup'" do
-
+  describe "POST 'participate'" do
+    before(:each) do
+      @attr = {:email => "person@contestant.com", :subscribed => true }
+    end
+    
+    it "should create the participant if the user signs up" do 
+      post :participate, :participant => @attr 
+      response.should be_success
+    end
+    
     it "should redirect back to home if the user didn't agree to terms"
     it "should not create the Participant if it already exist"
   end
