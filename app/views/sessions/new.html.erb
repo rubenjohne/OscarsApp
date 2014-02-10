@@ -2,8 +2,8 @@
 
 <%= form_for(:session, url: sessions_path) do |f| %>
 	
-	<%= f.label :email %>
-	<%= f.text_field :email %>
+	<%= f.label :email, class: "email" %>
+	<%= f.text_field :email, class: "form-control input-small" %>
 	
 	<%= f.label :password %>
 	<%= f.password_field :password %>

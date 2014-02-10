@@ -30,13 +30,13 @@ Oscarsapp::Application.routes.draw do
   get '/9/' => 'pages#9'
   get '/10/' => 'pages#10'
   get '/winner/' => 'pages#winner'
-  get '/promotionend/' => '#pages#promotionend'
+  get '/promotionend/' => 'pages#promotionend'
 
   get '/congrats/' => 'pages#congrats'
 
   get '/theend/' => 'pages#promotionend'
 
-  get '/incorrect' => 'pages#incorrect'
+  get '/incorrect/' => 'pages#incorrect'
 
   get 'pages/home'
 
