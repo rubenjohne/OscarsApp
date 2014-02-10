@@ -1,0 +1,7 @@
+<h1>Backbone will Render here</h1>
+
+<ul>
+<% for question in @questions.models: %>
+  <li><%= question.get('question') %></li>
+<% end %>
+</ul>

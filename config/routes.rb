@@ -16,6 +16,11 @@ Oscarsapp::Application.routes.draw do
   
   resources :sessions, only: [:new, :create, :destroy]
 
+  # scope for json api request
+  scope "api" do
+    resources :questions
+  end
+
   get '/mobile' => 'pages#mobile'
 
 
