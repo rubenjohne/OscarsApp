@@ -44,7 +44,7 @@ class PagesController < ApplicationController
     # get the question here
     @num = session[:num_of_questions].shuffle!.pop
     unless @num.nil? 
-      @question = @day.questions.find(@num)
+      @question = @day.questions.find_by(num: @num)
       @choices = @question.choices
     else
       redirect_to win_path
