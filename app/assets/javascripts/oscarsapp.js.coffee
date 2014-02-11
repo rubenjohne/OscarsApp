@@ -4,8 +4,8 @@ window.Oscarsapp =
   Views: {}
   Routers: {}
   initialize: -> 
-    new Oscarsapp.Routers.Questions()
-    Backbone.history.start({pushState: true})
+    #new Oscarsapp.Routers.Questions()
+    #Backbone.history.start({pushState: true})
 
 $(document).ready ->
   Oscarsapp.initialize()

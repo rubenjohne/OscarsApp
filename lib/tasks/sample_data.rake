@@ -18,8 +18,10 @@ namespace :db do
     # create questions 
     10.times do |n|
       question = 'How to ' + Faker::Company::bs + '?'
+      num = n + 1
       Question.create!(:question => question,
-                       :day_id => 1)
+                       :day_id => 1,
+                       :num => num)
       # create choices for each question                 
       5. times do |t|
         choice = Faker::Company::bs
