@@ -6,4 +6,9 @@ FactoryGirl.define do
     password_confirmation "foobar"
   end
   
+  factory :participant do
+    email       "user@participant.com"
+    subscribed  true
+  end
+  
 end

@@ -8,22 +8,34 @@ class PagesController < ApplicationController
   end
 
   include PagesHelper
-  before_filter :sign_up_first, :except => [:home, :signup]
+
+
+  before_filter :sign_up_first, :except => [:home, :participate]
 
   
   def home
-    @participant = Participant.new     
+    # make the session id nil 
+    session[:participant_id] = nil
   end
   
-  def signup 
-    # create the participant here 
-    @participant = Participant.new(participant_params)
-    if @participant.save 
-      session[:participant_id] ||= @participant.id      
-      redirect_to contest_path  
+  def participate 
+    # find if the participant already exist 
+    @participant = Participant.find_by_email(params[:participant][:email])
+    if @participant.nil? 
+      # create the participant here 
+      @participant = Participant.new(participant_params)
+      if @participant.save 
+        session[:participant_id] ||= @participant.id      
+        redirect_to contest_path  
+      else 
+        redirect_to root_path   
+      end
     else 
-      redirect_to root_path   
-    end
+      # if participant already exist 
+      @participant.update(participant_params)
+      session[:participant_id] ||= @participant.id      
+      redirect_to contest_path        
+    end    
   end
   
   
@@ -32,7 +44,8 @@ class PagesController < ApplicationController
   
   def contest
     
-    # start the counter for the beginning of a new session
+    # get the current participant
+    @participant = Participant.find(session[:participant_id])
     
     @day = Day.find(1)
     @question = @day.questions.find(1)

@@ -16,6 +16,11 @@ Oscarsapp::Application.routes.draw do
   
   resources :sessions, only: [:new, :create, :destroy]
 
+  # scope for json api request
+  scope "api" do
+    resources :questions
+  end
+
   get '/mobile' => 'pages#mobile'
 
 
@@ -48,6 +53,8 @@ Oscarsapp::Application.routes.draw do
   match '/signin', :to => 'sessions#new', via: :get
   match '/signout', :to => 'sessions#destroy', via: :delete
 
+
+  match '/participate', :to => 'pages#participate', via: :post 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
