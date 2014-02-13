@@ -25,7 +25,7 @@
 			<% @choices.each do |choice| %>
 				<li>
 					<%= label_tag(:choice_id , choice.choice ) do %>
-
+					<p><%= choice.choice %></p>
 					<%= radio_button_tag(:choice_id, choice.id) %>
 					<% end %>
 					
