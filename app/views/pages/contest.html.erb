@@ -1,3 +1,33 @@
+
+
+<%= stylesheet_link_tag  "layout", media: "all", "data-turbolinks-track" => true %>
+<div class="container">
+
+<img src="images/level/LEVEL-1.jpg">
+
+<div class="questionscontainer">
+
+<div class="questions">
+
+
+<label for="Question">
+  <p><%= @question.question %></p>
+
+</label>
+ </div>
+
+<div class="choices">
+
+<form>
+
+<% @choices.each do |post| %>
+
+<label for='<%= post.choice %>'>
+<input type="radio" name="idea" id="<%= post.choice %>" value="<%= post.choice %>" />
+<p><%= post.choice %></p>
+</label>
+<br />
+
 <%= form_for(:answer, :url => pages_answer_path) do |f| %>
 	<fieldset>
 		<h1><%= @question.question %></h1>
@@ -14,4 +44,21 @@
 		-->
 		<%= submit_tag "Submit" %>
 <% end %>	
+
+  <% end %>
+
+</form>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
 
