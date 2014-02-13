@@ -21,18 +21,20 @@
 <%= form_for(:answer, :url => pages_answer_path) do |f| %>
 	<fieldset>
 		<h1><%= @question.question %></h1>
-		<ul>
+	
 			<% @choices.each do |choice| %>
-				<li>
+			
 					<%= label_tag(:choice_id , choice.choice ) do %>
-					<p><%= choice.choice %></p>
+
 					<%= radio_button_tag(:choice_id, choice.id) %>
+
+					<p><%= choice.choice %></p>
 					<% end %>
 					
 					
-				</li>
+			
 			<% end %>
-		</ul>	
+	
 		<!--- add participant id as hidden tag here to send back 
 			<%= hidden_field_tag :participant_id, @participant.id %>
 		-->
