@@ -24,8 +24,11 @@
 		<ul>
 			<% @choices.each do |choice| %>
 				<li>
+				<%= label_tag(:choice_id , choice.choice, :value => choice.id ) do %>
 					<%= radio_button_tag(:choice_id, choice.id) %>
-					<%= label_tag(:choice_id , choice.choice, :value => choice.id )%>
+
+					<% end %>
+					
 				</li>
 			<% end %>
 		</ul>	
