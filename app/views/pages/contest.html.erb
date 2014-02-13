@@ -18,16 +18,6 @@
 
 <div class="choices">
 
-<form>
-
-<% @choices.each do |post| %>
-
-<label for='<%= post.choice %>'>
-<input type="radio" name="idea" id="<%= post.choice %>" value="<%= post.choice %>" />
-<p><%= post.choice %></p>
-</label>
-<br />
-
 <%= form_for(:answer, :url => pages_answer_path) do |f| %>
 	<fieldset>
 		<h1><%= @question.question %></h1>
@@ -44,10 +34,6 @@
 		-->
 		<%= submit_tag "Submit" %>
 <% end %>	
-
-  <% end %>
-
-</form>
 
 
 </div>
