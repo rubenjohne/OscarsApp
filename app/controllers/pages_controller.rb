@@ -2,13 +2,13 @@ class PagesController < ApplicationController
   include PagesHelper
   before_filter :sign_up_first, :except => [:home, :participate]
   
+  level = 0
   
   def home
     # make the session id nil 
     session[:participant_id] = nil
     @num_of_questions = [1,2,3,4,5,6,7,8,9,10]         
     session[:num_of_questions] =  @num_of_questions
-    level = 0
   end
   
   def participate 
