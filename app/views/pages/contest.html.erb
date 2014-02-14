@@ -3,7 +3,10 @@
 <%= stylesheet_link_tag  "layout", media: "all", "data-turbolinks-track" => true %>
 <div class="container">
 
-<img src="images/level/LEVEL-1.jpg">
+<%= if question.num = 1 %>
+      	<%= image_tag("images/level/LEVEL-1.jpg", :alt => "Online") %>	      	
+     	<%= end %>
+
 
 <div class="questionscontainer">
 
