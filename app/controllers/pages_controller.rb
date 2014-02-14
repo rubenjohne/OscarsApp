@@ -48,7 +48,7 @@ class PagesController < ApplicationController
     unless @num.nil? 
       @question = @day.questions.find_by(num: @num)
       @choices = @question.choices
-      level = level++
+      level = (level + 1)
       @wtf = level
     else
       redirect_to win_path
