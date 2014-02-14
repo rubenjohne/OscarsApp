@@ -163,6 +163,18 @@ body{
 }
 
 
+#submit{
+
+  z-index:100;
+    position:absolute;    
+    font-size: 12px;
+    left:94px;
+    top:988px;
+      width: 97px;
+height: 29px;
+    background: url("../assets/buttons/0168_VoteButton-idle.jpg") no-repeat; border: none;
+}
+
 /* #Media Queries
 ================================================== */
 
