@@ -83,7 +83,7 @@ class PagesController < ApplicationController
       else 
         session[:num_of_questions] = [1,2,3,4,5,6,7,8,9,10]
         session[:level] = 0
-        render :wrong
+        render :incorrect
         # go to sorry page?? try tomorrow or later?
       end          
     else 
