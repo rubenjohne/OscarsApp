@@ -72,7 +72,7 @@ body{
 .questionscontainer{
 	position:absolute;
 	top:750px;
-	left:375px;
+	left:385px;
 	z-index:5;
 	width:500px;
 }
