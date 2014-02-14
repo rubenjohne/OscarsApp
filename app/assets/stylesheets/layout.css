@@ -163,7 +163,7 @@ body{
 }
 
 
-#submit{
+.submit{
 
   z-index:100;
     position:absolute;    
@@ -172,7 +172,7 @@ body{
     top:988px;
       width: 97px;
 height: 29px;
-    background: url("../assets/buttons/0168_VoteButton-idle.jpg") no-repeat; border: none;
+    background: url("images/TAKE-THE-NEXT-STEP-BUTTON.png") no-repeat; border: none;
 }
 
 /* #Media Queries
