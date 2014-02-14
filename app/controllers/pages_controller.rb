@@ -9,6 +9,7 @@ class PagesController < ApplicationController
     session[:participant_id] = nil
     @num_of_questions = [1,2,3,4,5,6,7,8,9,10]         
     session[:num_of_questions] =  @num_of_questions
+    session[:level] = 0
   end
   
   def participate 
@@ -37,7 +38,8 @@ class PagesController < ApplicationController
   
   def contest
     
-    level = 0
+    @start = session[:level]
+    @start + 1
     # get the current participant
     @participant = Participant.find(session[:participant_id])
     
@@ -49,8 +51,7 @@ class PagesController < ApplicationController
     unless @num.nil? 
       @question = @day.questions.find_by(num: @num)
       @choices = @question.choices
-      level = (level + 1)
-      @wtf = level
+      @start
     else
       redirect_to win_path
     end      
