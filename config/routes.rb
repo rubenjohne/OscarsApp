@@ -46,6 +46,8 @@ Oscarsapp::Application.routes.draw do
   get 'pages/home'
 
   match '/contest', :to => 'pages#contest', via: :get 
+  match '/win', :to => 'pages#win', via: :get 
+  
 
   match 'pages/answer', via: :post 
 

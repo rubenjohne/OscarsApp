@@ -13,7 +13,7 @@ class Question < ActiveRecord::Base
   belongs_to :day
   has_many :choices
   
-  attr_accessible :question, :day_id
+  attr_accessible :question, :day_id, :num
   
   
   def to_label

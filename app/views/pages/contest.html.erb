@@ -1,3 +1,62 @@
+
+
+<%= stylesheet_link_tag  "layout", media: "all", "data-turbolinks-track" => true %>
+<div class="container">
+
+<% if @level == 9 %>
+<img src="images/level/LEVEL-1.jpg">      	
+     	<% end %>
+
+     	<% if @level == 8 %>
+<img src="images/level/LEVEL-2.jpg">      	
+     	<% end %>
+
+     	<% if @level == 7 %>
+<img src="images/level/LEVEL-3.jpg">      	
+     	<% end %>
+
+     	<% if @level == 6 %>
+<img src="images/level/LEVEL-4.jpg">      	
+     	<% end %>
+
+     	<% if @level == 5 %>
+<img src="images/level/LEVEL-5.jpg">      	
+     	<% end %>
+
+     	<% if @level == 4 %>
+<img src="images/level/LEVEL-6.jpg">      	
+     	<% end %>
+     	<% if @level == 3 %>
+<img src="images/level/LEVEL-7.jpg">      	
+     	<% end %>
+
+     	     	<% if @level == 2 %>
+<img src="images/level/LEVEL-8.jpg">      	
+     	<% end %>
+
+     	     	<% if @level == 1 %>
+<img src="images/level/LEVEL-9.jpg">      	
+     	<% end %>
+
+     	     	<% if @level == 0 %>
+<img src="images/level/LEVEL-10.jpg">      	
+     	<% end %>
+
+<%= @level %>
+
+<div class="questionscontainer">
+
+<div class="questions">
+
+
+<label for="Question">
+  <p><%= @question.question %></p>
+
+</label>
+ </div>
+
+<div class="choices">
+
 <%= form_for(:answer, :url => pages_answer_path) do |f| %>
 	<fieldset>
 		<h1><%= @question.question %></h1>
@@ -14,4 +73,17 @@
 		-->
 		<%= submit_tag "Submit" %>
 <% end %>	
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
 

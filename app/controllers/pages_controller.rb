@@ -13,9 +13,13 @@ class PagesController < ApplicationController
   before_filter :sign_up_first, :except => [:home, :participate]
 
   
+
+  
   def home
     # make the session id nil 
     session[:participant_id] = nil
+    @num_of_questions = [1,2,3,4,5,6,7,8,9,10]         
+    session[:num_of_questions] =  @num_of_questions
   end
   
   def participate 
@@ -44,12 +48,26 @@ class PagesController < ApplicationController
   
   def contest
     
+
     # get the current participant
     @participant = Participant.find(session[:participant_id])
     
     @day = Day.find(1)
-    @question = @day.questions.find(1)
-    @choices = @question.choices    
+    
+    # get the question here
+    @num = session[:num_of_questions].shuffle!.pop
+
+    @level = session[:num_of_questions].size
+    unless @num.nil? 
+      @question = @day.questions.find_by(num: @num)
+      @choices = @question.choices
+    else
+      redirect_to win_path
+    end      
+  end
+  
+  def win
+    
   end
   
   def answer
@@ -63,6 +81,8 @@ class PagesController < ApplicationController
         render :correct
         # go to the next question if it's not the last question else go to the winner page
       else 
+        session[:num_of_questions] = [1,2,3,4,5,6,7,8,9,10]
+        session[:level] = 0
         render :wrong
         # go to sorry page?? try tomorrow or later?
       end          
