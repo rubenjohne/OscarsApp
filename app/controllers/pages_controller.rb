@@ -48,6 +48,7 @@ class PagesController < ApplicationController
     # get the question here
     @num = session[:num_of_questions].shuffle!.pop
 
+    @wtf = session[:num_of_questions].size
     unless @num.nil? 
       @question = @day.questions.find_by(num: @num)
       @choices = @question.choices
