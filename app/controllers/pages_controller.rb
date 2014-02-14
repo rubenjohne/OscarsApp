@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   include PagesHelper
   before_filter :sign_up_first, :except => [:home, :participate]
   
-  level = 0
+
   
   def home
     # make the session id nil 
@@ -37,6 +37,7 @@ class PagesController < ApplicationController
   
   def contest
     
+    level = 0
     # get the current participant
     @participant = Participant.find(session[:participant_id])
     
