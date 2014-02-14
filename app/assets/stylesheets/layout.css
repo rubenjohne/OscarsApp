@@ -72,7 +72,7 @@ body{
 .questionscontainer{
 	position:absolute;
 	top:750px;
-	left:385px;
+	left:390px;
 	z-index:5;
 	width:500px;
 }
@@ -87,7 +87,7 @@ body{
 .choices{
 	width: 100%;
     margin: 0 auto;
-    left:200px;
+    left:190px;
     position:absolute;
 }
 
