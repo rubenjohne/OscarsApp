@@ -51,7 +51,6 @@ class PagesController < ApplicationController
     unless @num.nil? 
       @question = @day.questions.find_by(num: @num)
       @choices = @question.choices
-      @start
     else
       redirect_to win_path
     end      
@@ -72,7 +71,8 @@ class PagesController < ApplicationController
         render :correct
         # go to the next question if it's not the last question else go to the winner page
       else 
-        session[:num_of_questions] = [1,2,3,4,5,6,7,8,9,10] 
+        session[:num_of_questions] = [1,2,3,4,5,6,7,8,9,10]
+        session[:level] = 0
         render :wrong
         # go to sorry page?? try tomorrow or later?
       end          
