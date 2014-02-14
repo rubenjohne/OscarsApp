@@ -62,7 +62,7 @@
 			<% @choices.each do |choice| %>
 				
 					<%#= radio_button_tag(:choice_id, choice.id) %>
-			<input type="radio" name="<%= choice.id %>" id="<%= choice.choice %>" value="<%= choice.choice %>" />
+			<input type="radio" name="<%= choice.id %>" id="<%= choice.id %>" value="<%= choice.choice %>" />
 				<p>	<%= label_tag(:choice_id , choice.choice )%></p>
 			<br />
 			<% end %>
