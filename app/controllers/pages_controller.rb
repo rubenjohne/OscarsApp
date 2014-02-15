@@ -77,7 +77,8 @@ class PagesController < ApplicationController
     if @answer.save
       # check the answer
       @choice = Choice.find(params[:choice_id])
-      if @choice.correct 
+      if @choice.correct
+        @level = session[:num_of_questions].size 
         render :correct
         # go to the next question if it's not the last question else go to the winner page
       else 
