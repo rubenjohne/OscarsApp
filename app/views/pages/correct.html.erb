@@ -1,3 +1,5 @@
+<div class="questionscontainer">
+
 <div class="questions">
 
 <h1>You are correct!! <%= @choice.explaination %></h1>
@@ -5,6 +7,7 @@
 <%= link_to "Next Question", contest_path %>
 </div>
 
+</div>
 <% if @level == 9 %>
 <img src="../images/level/LEVEL-1.jpg">      	
      	<% end %>
