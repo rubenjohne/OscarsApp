@@ -175,6 +175,12 @@ height: 29px;
     background: url("/images/TAKE-THE-NEXT-STEP-BUTTON.png") no-repeat; border: none;
 }
 
+.play_again{
+
+background:url("/images/incorrect/LOSE-TRY-AGAIN_05.jpg") no-repeat bottom;
+
+}
+
 /* #Media Queries
 ================================================== */
 
