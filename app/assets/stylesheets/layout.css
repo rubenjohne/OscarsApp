@@ -185,8 +185,8 @@ height: 29px;
 .play_again{
 
 background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
-height:29px;
-width:97px;
+height:229px;
+width:307px;
 
 }
 
@@ -194,6 +194,10 @@ width:97px;
 	position:absolute;
 	top:199px;
 	left:30px;
+}
+
+#participant_email{
+	color:black;
 }
 
 /* #Media Queries
