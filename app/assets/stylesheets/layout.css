@@ -200,6 +200,11 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 	color:black;
 }
 
+.middleslices{
+	position:absolute;
+	top:200px;
+}
+
 /* #Media Queries
 ================================================== */
 
