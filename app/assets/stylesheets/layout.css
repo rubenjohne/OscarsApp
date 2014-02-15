@@ -205,6 +205,11 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 	top:200px;
 }
 
+.midright{
+	position:absolute;
+	left:590px;
+}
+
 /* #Media Queries
 ================================================== */
 
