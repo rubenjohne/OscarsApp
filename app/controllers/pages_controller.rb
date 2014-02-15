@@ -67,7 +67,7 @@ class PagesController < ApplicationController
   end
   
   def win
-    
+    render :winner
   end
   
   def answer
