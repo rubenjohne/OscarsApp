@@ -146,7 +146,8 @@ body{
 }
 
 .bottomslice{
-
+	position:absolute;
+	top:900px;
 	text-align:center;
 	height:269px;
 	margin-right:0;
