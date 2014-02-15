@@ -147,10 +147,11 @@ body{
 
 .bottomslice{
 	position:absolute;
-	top:900px;
+	top:700px;
 	text-align:center;
 	height:269px;
 	margin-right:0;
+	width:1280px;
 	background:url("/images/incorrect/LOSE-TRY-AGAIN_05.jpg") no-repeat bottom;
 	background-position:center;
 }
