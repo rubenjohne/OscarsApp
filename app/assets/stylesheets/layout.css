@@ -147,7 +147,7 @@ body{
 
 .bottomslice{
 	position:absolute;
-	top:1000px;
+	top:755px;
 	text-align:center;
 	height:269px;
 	margin-right:0;
@@ -204,13 +204,13 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 
 .middleslices{
 	position:absolute;
-	top:800px;
-	width:1280px;
+	top:716px;
+	width:100%;
 }
 
 .midright{
 	position:absolute;
-	left:590px;
+	left:0px;
 	width:1280px;
 }
 
