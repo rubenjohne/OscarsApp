@@ -205,11 +205,13 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 .middleslices{
 	position:absolute;
 	top:800px;
+	width:1280px;
 }
 
 .midright{
 	position:absolute;
 	left:590px;
+	width:1280px;
 }
 
 /* #Media Queries
