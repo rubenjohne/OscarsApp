@@ -59,8 +59,8 @@ body{
 	margin-bottom:0px;
     width:850px;
     height:550px;
-    top:600px;
-    left:470px;
+    top:620px;
+    left:550px;
     color: #fff;
     padding:0px 0px 0px 0px;
 }
@@ -178,9 +178,15 @@ height: 29px;
 .play_again{
 
 background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
-height:100%;
-width:100%;
+height:29px;
+width:97px;
 
+}
+
+.page1_submit{
+	position:absolute;
+	top:195px;
+	left:30px;
 }
 
 /* #Media Queries
