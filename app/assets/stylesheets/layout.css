@@ -26,6 +26,7 @@
 
 body{
 	margin:0px;
+	background-color:black;
 }
 
 img{
@@ -35,7 +36,7 @@ img{
 .derp1{
 	position:absolute;
 	left:0px;
-	top:823px;
+	top:819px;
 }
 
 .derp2{
@@ -46,12 +47,12 @@ img{
 .derp3{
 	position: absolute;
 	left:692px;
-	top:823px;
+	top:819px;
 }
 
 .derp4{
 	position:absolute;
-	top:859px;
+	top:854px;
 	left:0px;
 }
 .center{
@@ -194,7 +195,7 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 
 .page1_submit{
 	position:absolute;
-	top:199px;
+	top:195px;
 	left:65px;
 	height:36px;
 	width:107px;
@@ -203,7 +204,7 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 
 .page1_submit:hover{
 	position:absolute;
-	top:199px;
+	top:195px;
 	left:65px;
 	height:36px;
 	width:107px;
