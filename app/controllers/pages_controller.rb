@@ -67,6 +67,16 @@ class PagesController < ApplicationController
   end
   
   def win
+    # get the current particpant infomration
+    @participant = Participant.find(session[:participant_id])
+    
+    # get random prize from the database
+    @prize = Prize.find(rand(1..10))
+    
+    # save this information in the winner database 
+    Winner.create!(:participant_id => @participant.id, 
+                   :price_id => @prize.id)
+    
     render :winner
   end
   

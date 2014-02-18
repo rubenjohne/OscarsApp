@@ -7,6 +7,7 @@
 #  day_id     :integer
 #  created_at :datetime
 #  updated_at :datetime
+#  num        :integer
 #
 
 class Question < ActiveRecord::Base

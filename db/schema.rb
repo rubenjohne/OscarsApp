@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140210235701) do
+ActiveRecord::Schema.define(version: 20140218231102) do
 
   create_table "answers", force: true do |t|
     t.datetime "date"
@@ -76,5 +76,12 @@ ActiveRecord::Schema.define(version: 20140210235701) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+
+  create_table "winners", force: true do |t|
+    t.integer  "participant_id"
+    t.integer  "price_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
