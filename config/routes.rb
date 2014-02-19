@@ -43,6 +43,8 @@ Oscarsapp::Application.routes.draw do
 
   get '/incorrect/' => 'pages#incorrect'
 
+  get '/claim/' => 'pages#claim'
+
   get 'pages/home'
 
   match '/contest', :to => 'pages#contest', via: :get 

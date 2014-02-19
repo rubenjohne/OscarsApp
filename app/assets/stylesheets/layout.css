@@ -67,7 +67,7 @@ img{
 	margin-bottom:0px;
     width:850px;
     height:550px;
-    top:624px;
+    top:650px;
     left:520px;
     color: #fff;
     padding:0px 0px 0px 0px;
@@ -80,9 +80,11 @@ img{
 .questionscontainer{
 	position:absolute;
 	top:750px;
-	left:390px;
+	left:410px;
 	z-index:5;
 	width:500px;
+	margin:0 auto;
+	text-align:center;
 }
 
 .questions p{
@@ -93,18 +95,19 @@ img{
 }
 
 .choices{
-	width: 100%;
-    margin: 0 auto;
-    left:135px;
+    left:90px;
     position:absolute;
+    text-align: justify;
+  margin: 0 auto;
+  width: 30em;
 }
 
 .choices p{
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+   font-weight: 200;
    color:gold;
    font-size:18px;
-   text-align: justify;
+   text-align: center;
    display:inline-block;
 
 }
@@ -142,7 +145,6 @@ img{
 	text-align:center;
 	height:39px;
 	margin-right:0;
-	background:url("/images/incorrect/LOSE-TRY-AGAIN_04.jpg") no-repeat left;
 	background-position:right;
 }
 
@@ -186,16 +188,27 @@ height: 29px;
 }
 
 .play_again{
+	position:absolute;
 height:229px;
 width:307px;
-background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
+background:url("/images/incorrect/PLAYAGAIN-IDLE.png") no-repeat bottom;
+left:490px;
+top:-160px;
 
+}
+
+.play_again:hover{
+	position:absolute;
+height:229px;
+width:307px;
+background:url("/images/incorrect/PLAYAGAIN-HOVER.png") no-repeat bottom;
+left:490px;
 
 }
 
 .page1_submit{
 	position:absolute;
-	top:195px;
+	top:165px;
 	left:65px;
 	height:36px;
 	width:107px;
@@ -204,11 +217,49 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 
 .page1_submit:hover{
 	position:absolute;
-	top:195px;
+	top:165px;
 	left:65px;
 	height:36px;
 	width:107px;
 	background:url("/images/page_1/PAGE-1_04-HOVER.jpg")
+}
+
+.contest_submit{
+	background:url("/images/SUBMIT-IDLE.png");
+	width:89px;
+	height:39px;
+	border:0;
+	margin-left:100px;
+}
+
+.contest_submit:hover{
+	background:url("/images/SUBMIT-HOVER.png");
+	width:89px;
+	height:39px;
+}
+
+.nextquestion_button{
+
+  	z-index:100;
+    position:absolute;    
+    font-size: 12px;
+    left:150px;
+    top:115px;
+    width: 200px;
+	height: 49px;
+    background: url("/images/NEXTSTEP-IDLE.png") no-repeat; border: none;
+}
+
+.nextquestion_button:hover{
+
+  	z-index:100;
+    position:absolute;    
+    font-size: 12px;
+    left:150px;
+    top:115px;
+    width: 200px;
+	height: 49px;
+    background: url("/images/NEXTSTEP-HOVER.png") no-repeat; border: none;
 }
 
 #participant_email{
@@ -226,6 +277,20 @@ background:url("/images/incorrect/LOSE-TRY-AGAIN_03.jpg") no-repeat bottom;
 	top:0px;
 	left:0px;
 	width:1280px;
+}
+
+.claimprize{
+	position:absolute;
+	top:950px;
+	left:560px;
+	background: url("/images/winner/CLAIM-PRIZE-BUTTON-IDLE.png") no-repeat; border: none;
+}
+
+.claimprize:hover{
+	position:absolute;
+	top:950px;
+	left:560px;
+	background: url("/images/winner/CLAIM-PRIZE-BUTTON-HOVER.png") no-repeat; border: none;
 }
 
 /* #Media Queries

@@ -1,10 +1,15 @@
+<%= stylesheet_link_tag  "layout", media: "all", "data-turbolinks-track" => true %>
+
+<div class="container">
 <div class="questionscontainer">
 
 <div class="questions">
 
-<p>You are correct!! <%= @choice.explaination %></p>
+<p>That answer is correct!</p>
+<p><%= @choice.explaination %></p>
+<p>You're one step closer to making your grand entrance.</p>
 
-<%= link_to "Next Question", contest_path %>
+<%= link_to "", contest_path, :class => "nextquestion_button" %>
 </div>
 
 </div>
@@ -46,5 +51,7 @@
      	     	<% if @level == 0 %>
 <img src="images/level/LEVEL-10.jpg">      	
      	<% end %>
+
+</div>
 
 
