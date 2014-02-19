@@ -15,6 +15,14 @@ namespace :db do
     # create the day
     Day.create!(:dayname => "Monday")
     
+    # create prizes 
+    10.times do |y|
+      pictureurl = "URL" + y.to_s
+      promocode = "PROMO CODE" + y.to_s
+      Prize.create!(:pictureurl => pictureurl,
+                    :promocode => promocode)
+    end
+    
     # create questions 
     10.times do |n|
       question = 'How to ' + Faker::Company::bs + '?'
@@ -22,6 +30,7 @@ namespace :db do
       Question.create!(:question => question,
                        :day_id => 1,
                        :num => num)
+                       
       # create choices for each question                 
       5. times do |t|
         choice = Faker::Company::bs
@@ -35,7 +44,9 @@ namespace :db do
       end
       
     end
-  
+    
+
+
   end  
     
 end

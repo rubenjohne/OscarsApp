@@ -37,8 +37,14 @@ class PagesController < ApplicationController
     else 
       # if participant already exist 
       @participant.update(participant_params)
-      session[:participant_id] ||= @participant.id      
-      redirect_to alreadyplayed_path        
+      session[:participant_id] ||= @participant.id  
+      # check if the participant already won today 
+      @winner = Winner.find_by_participant_id(session[:participant_id])    
+      if @winner.created_at.to_date == Date.today 
+        redirect_to won_path
+      else 
+        redirect_to contest_path        
+      end   
     end    
   end
 
@@ -46,6 +52,9 @@ class PagesController < ApplicationController
     render :alreadyplayed
   end
   
+  def won
+    
+  end
   
   def mobile
   end
@@ -71,6 +80,16 @@ class PagesController < ApplicationController
   end
   
   def win
+    # get the current particpant infomration
+    @participant = Participant.find(session[:participant_id])
+    
+    # get random prize from the database
+    @prize = Prize.find(rand(1..10))
+    
+    # save this information in the winner database 
+    Winner.create!(:participant_id => @participant.id, 
+                   :price_id => @prize.id)
+    
     render :winner
   end
   

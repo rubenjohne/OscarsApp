@@ -49,8 +49,7 @@ Oscarsapp::Application.routes.draw do
 
   match '/contest', :to => 'pages#contest', via: :get 
   match '/win', :to => 'pages#win', via: :get 
-
-  match '/alreadyplayed', :to => 'pages#alreadyplayed', via: :get 
+  match '/won', :to => 'pages#won', via: :get
   
 
   match 'pages/answer', via: :post 

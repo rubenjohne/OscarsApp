@@ -10,6 +10,8 @@
 #
 
 class Prize < ActiveRecord::Base
+  attr_accessible :pictureurl, :promocode
+  
 	def to_label
 		"#{id}"
 	end
