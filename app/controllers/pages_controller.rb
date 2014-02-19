@@ -37,11 +37,20 @@ class PagesController < ApplicationController
     else 
       # if participant already exist 
       @participant.update(participant_params)
-      session[:participant_id] ||= @participant.id      
-      redirect_to contest_path        
+      session[:participant_id] ||= @participant.id  
+      # check if the participant already won today 
+      @winner = Winner.find_by_participant_id(session[:participant_id])    
+      if @winner.created_at.to_date == Date.today 
+        redirect_to won_path
+      else 
+        redirect_to contest_path        
+      end   
     end    
   end
   
+  def won
+    
+  end
   
   def mobile
   end
