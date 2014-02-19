@@ -212,7 +212,8 @@ left:490px;
 	left:65px;
 	height:36px;
 	width:107px;
-	background:url("/images/page_1/PAGE-1_04-IDLE.jpg")
+	background:url("/images/page_1/PAGE-1_04-IDLE.jpg");
+	border:0;
 }
 
 .page1_submit:hover{
@@ -221,7 +222,7 @@ left:490px;
 	left:65px;
 	height:36px;
 	width:107px;
-	background:url("/images/page_1/PAGE-1_04-HOVER.jpg")
+	background:url("/images/page_1/PAGE-1_04-HOVER.jpg");
 }
 
 .contest_submit{
