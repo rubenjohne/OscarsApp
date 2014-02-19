@@ -38,8 +38,12 @@ class PagesController < ApplicationController
       # if participant already exist 
       @participant.update(participant_params)
       session[:participant_id] ||= @participant.id      
-      redirect_to contest_path        
+      redirect_to alreadyplayed_path        
     end    
+  end
+
+  def alreadyplayed
+    render :alreadyplayed
   end
   
   
